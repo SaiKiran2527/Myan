@@ -1,0 +1,12 @@
+
+<div class="fullscreen-div background-image">
+    
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span class="awesome" *ngFor="let letter of word; let i = index" [ngClass]="{ 'visible': visibleLetters[i] }">{{ visibleLetters[i] ? letter : '' }}</span>
+      </div>
+</div>

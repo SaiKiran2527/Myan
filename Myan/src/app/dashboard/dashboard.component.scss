@@ -1,0 +1,202 @@
+.background-image {
+    background-image: url('../../assets/bday.avif'); /* Adjust the path based on your project structure */
+    background-size: cover; /* Optional: Cover the entire element */
+    /* Additional background properties can be added here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Media query for tablets and mobile devices */
+@media (max-width: 768px) {
+    .background-image {
+        background-image: url('../../assets/bday2.jpg'); /* Smaller or more suitable image for mobile */
+    }
+}
+
+/* Additional media query for very small screens */
+@media (max-width: 480px) {
+    .background-image {
+        background-image: url('../../assets/bday2.jpg'); /* Even smaller image for very small devices */
+    }
+}
+
+
+  .fullscreen-div {
+    position: fixed; /* or absolute */
+    top: 0;
+    left: 0;
+    width: 100vw; /* 100% of viewport width */
+    height: 100vh; /* 100% of viewport height */
+  }
+
+  .word-container span {
+    display: inline-block;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity change */
+  }
+  
+  .word-container span:not(.visible) {
+    opacity: 0; /* Hide non-visible letters */
+  }
+
+
+  .my-div {
+    position: relative; /* Ensure proper stacking context */
+    z-index: 9999; /* Adjust the value as needed */
+  }
+
+  .my-div.word-container {
+    color: white; /* Replace 'blue' with the desired color */
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the opacity as needed */
+    padding: 10px;
+  }
+
+  .visible {
+    display: inline; /* or block or any other display value as needed */
+  }
+  
+  .center {
+      
+    margin: 0 auto;
+    
+  }
+  .awesome {
+      
+    font-family: futura;
+    font-style: italic;
+    
+    width:100%;
+    
+    margin: 0 auto;
+    text-align: center;
+    
+    color:#313131;
+    font-size:245px;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation:colorchange 20s infinite alternate;
+    
+    
+  }
+
+
+  @media (max-width: 768px) {
+    .awesome {
+        font-size: 160px; /* Fixes the font size on very small devices */
+    }
+}
+@media (max-width: 480px) {
+    .awesome {
+        font-size: 160px; /* Fixes the font size on very small devices */
+    }
+}
+  @keyframes colorchange {
+    0% {
+      color: blue;
+    }
+    10% {
+      color: #8e44ad;
+    }
+    20% {
+      color: #1abc9c;
+    }
+    30% {
+      color: #d35400;
+    }
+    40% {
+      color: blue;
+    }
+    50% {
+      color: #34495e;
+    }
+    60% {
+      color: blue;
+    }
+    70% {
+      color: #2980b9;
+    }
+    80% {
+      color: #f1c40f;
+    }
+    90% {
+      color: #2980b9;
+    }
+    100% {
+      color: pink;
+    }
+  }
+  
+
+  @-webkit-keyframes colorchange {
+    0% {
+      
+      color: blue;
+    }
+    
+    10% {
+      
+      color: #8e44ad;
+    }
+    
+    20% {
+      
+      color: #1abc9c;
+    }
+    
+    30% {
+      
+      color: #d35400;
+    }
+    
+    40% {
+      
+      color: blue;
+    }
+    
+    50% {
+      
+      color: #34495e;
+    }
+    
+    60% {
+      
+      color: blue;
+    }
+    
+    70% {
+      
+      color: #2980b9;
+    }
+    80% {
+   
+      color: #f1c40f;
+    }
+    
+    90% {
+   
+      color: #2980b9;
+    }
+    
+    100% {
+      
+      color: pink;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    height: 200px; /* Example height for the container */
+    border: 1px solid #ccc; /* Just for visualization */
+}
+
+  
+  
